@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./index.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="mainDiv">
+    <div id="firstDiv">
+      <form>
+      <div id="dayDiv" class="inputDiv">
+      <p>DAY</p>
+      <input id="inputDay" type="number" placeholder="DD" />
+      <small></small>
+      </div>
+
+      <div id="monthDiv" class="inputDiv">
+      <p>MONTH</p>
+      <input id="inputMonth" type="number" placeholder="MM" />
+      <small></small>
+      </div>
+
+      <div id="yearDiv" class="inputDiv">
+      <p>YEAR</p>
+      <input id="inputYear" type="number" placeholder="YYYY" />
+      <small></small>
+      </div>
+      <button type="submit" id="submit-btn"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+      </form>
+      </div>
+      <div id="secondDiv">
+      <div class="displayDiv">
+        <span id="displayYears" class="purple">--</span> years
+      </div>
+      <div class="displayDiv">
+        <span id="displayMonths" class="purple">--</span> months
+      </div>
+      <div class="displayDiv">
+        <span id="displayDays" class="purple">--</span> days
+      </div>
+      </div>
+  </div>
+  <script src="./index.js" ></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Outfit:wght@500&family=Overpass&family=Poppins&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 94%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#mainDiv{
+    background-color: white;
+    width: auto;
+    border-radius: 20px 20px 150px 20px ;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+#firstDiv{
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+#firstDiv form{
+    display: flex;
+    gap: 10px;
+}
+
+#firstDiv button{
+    background-color: hsl(259, 100%, 65%);
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 6rem;
+    border: none;
+    transition: 0.5s;
+}
+
+#firstDiv button:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+#firstDiv button:active{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.inputDiv{
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    display: flex;
+    flex-direction: column;
+}
+
+.errorText{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 100%, 67%);
+    font-size: 14px;
+}
+
+.inputDiv p{
+    padding-bottom: 5px;
+}
+
+.inputDiv input{
+    width: 9rem;
+    padding: 1rem ;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.displayDiv{
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.purple{
+    color: hsl(259, 100%, 65%);
+}
+
+small{
+    color: red;
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    #firstDiv button{
+        right: 15rem;
+    }
+}
